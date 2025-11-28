@@ -63,8 +63,6 @@ https://docs.chaindigital.io/mainnets/polkadot/install
 
 ## 🛠 Installation Scripts
 
-> All scripts are now served from **chaindigital** repositories.
-
 ### 📋 Upgrade DOT/KSM
 
 ```bash
