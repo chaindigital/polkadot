@@ -17,22 +17,35 @@ High-performance RPC endpoints and snapshots optimized for latency-challenged re
 
 ---
 
-###  Diagnostic Tools for DN Candidates
+### 🧰 Diagnostic Tools for DN Candidates
 
-Daily-use troubleshooting scripts that eliminate the most common DN-killing mistakes:
+Daily-use troubleshooting scripts that eliminate the most common **DN-killing mistakes** and verify whether your node meets evaluator expectations.
 
 | Script | Purpose |
 |-------|---------|
-| `logscan.sh` | Detects restart loops, stalls, libp2p failures |
-| `hwcheck.sh` | Validates CPU flags, IOPS, system kernel & tuning |
-| `warptest.sh` | Verifies warp-sync correctness |
+| `logscan.sh` | Detects restart loops, stalls, libp2p failures, fork/desync conditions |
+| `hwcheck.sh` | Validates CPU flags, disk IOPS, kernel tuning, time sync & ulimit requirements |
+| `warptest.sh` | Confirms warp-sync integrity and database completeness |
 
-📎 Source code:  
-https://github.com/chaindigital/polkadot/blob/main/logscan.sh  
-https://github.com/chaindigital/polkadot/blob/main/hwcheck.sh  
-https://github.com/chaindigital/polkadot/blob/main/warptest.sh  
+---
 
-These tools **prevent the exact issues** that cause DN candidates to fail evaluation.
+### ▶️ Run Diagnostic Tools
+
+**LogScan — detect stalls, restarts & libp2p issues**
+```bash
+source <(curl -s https://raw.githubusercontent.com/chaindigital/polkadot/main/logscan.sh)
+```
+
+**HWCheck — verify hardware, kernel & performance readiness**
+```bash
+source <(curl -s https://raw.githubusercontent.com/chaindigital/polkadot/main/hwcheck.sh)
+```
+
+**WarpTest — ensure warp-sync correctness**
+```bash
+source <(curl -s https://raw.githubusercontent.com/chaindigital/polkadot/main/warptest.sh)
+```
+These tools prevent the exact issues that cause DN candidates to fail evaluation — including missing AVX CPU instructions, unsynchronized system clocks, misconfigured warp-sync, low IOPS storage, and hidden libp2p stalls.
 
 ---
 
