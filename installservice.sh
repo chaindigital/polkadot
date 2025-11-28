@@ -179,7 +179,7 @@ sudo apt install -y protobuf-compiler
 cd
 git clone https://github.com/paritytech/polkadot-sdk.git
 cd polkadot-sdk
-git checkout polkadot-v1.14.0
+git checkout polkadot-stable2509-2
 sudo apt install cmake -y
 rustup component add rust-src
 rustup target add wasm32-unknown-unknown
