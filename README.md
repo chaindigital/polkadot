@@ -1,4 +1,4 @@
-# CHAIN DIGITAL — Polkadot & Kusama Tooling Suite
+# # CHAIN DIGITAL — <img src="https://raw.githubusercontent.com/chaindigital/logo/main/polkadot.png" width="28"/> Polkadot & <img src="https://raw.githubusercontent.com/chaindigital/logo/main/kusama.png" width="28"/> Kusama Tooling Suite
 
 A complete toolkit for Polkadot/Kusama node operators, with warp-sync installers, automated upgrade scripts, diagnostic utilities, and DN-focused best practices.
 
