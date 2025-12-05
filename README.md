@@ -57,7 +57,7 @@ Upcoming utility: **Node Readiness Checker**
 Runs a full pre-launch validation of kernel, storage, clocks, limits, CPU flags, performance thresholds.
 
 📘 Guide:  
-https://docs.chaindigital.io/mainnets/polkadot/install
+https://docs.chaindigital.tech/mainnets/polkadot/install
 
 ---
 
